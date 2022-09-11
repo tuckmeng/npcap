@@ -18,3 +18,6 @@ g. savedump.exe - Dumps the packets from network interface to file in pcap forma
 h. sendpack.exe - Sends test packets to the network interface
 
 i. udpdump.exe - Captures incoming UDP packets to network interface
+
+Packet capture filter rule  examples are in https://techdocs.broadcom.com/us/en/symantec-security-software/web-and-network-security/proxysg/7-2/introduction/diagnostics/packet-capturing-pcapthe-job-utility/common-pcap-filter-expressions.html
+
