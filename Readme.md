@@ -1,4 +1,5 @@
-This are the examples from the Npcap SDK compiled to run on windows. The Npcap SDK is from https://npcap.com which is a standardised packet capture library implementing the pcap API for all platforms. To try them out, install the npcap installer on Windows and then run the exe files. There are challenges building the files in Windows, so I've created them here.
+This are the examples from the Npcap SDK compiled to run on windows. The Npcap SDK is from https://npcap.com which is a standardised packet capture library implementing the pcap API for all platforms. The same feature in Unix is available if you install tcpdump.To try them out, install the npcap installer on Windows and then run the exe files. There are challenges building the files in Windows, so I've created them here. Interestingly if you run the command wine exename.exe on Linux, the exe files actually can pick up the network interface name and prompt you to choose them, but are not able to get them to capture the packets. Believe it's just a dll name referencing issue and you just need a stub windows dll that maps the npcap lib functions to the linux pcap functions. But that's an exercise for another day.
+
 The files are as follows:
 
 a. basic_dump.exe - Captures the number of bytes flowing through the network interface.
