@@ -31,6 +31,12 @@ h. sendpack.exe - Sends test packets to the network interface
 
 i. udpdump.exe - Captures incoming UDP packets to network interface
 
+I enhanced 2 new utilities: tcptop and basic_dump_with_filter
+
+j. tcptop.exe - Shows statistics in terms of BPS (bits per second) and PPS (packets per second). Specify a filter for the packets, eg tcptop -f "port 80"
+
+k. basic_dump_with_filter.exe - Enhancement of basic_dump.exe to show the data in the packet after you specify a filter, eg basic_dump_with_filter -f "port 80"
+
 # Packet Capture Filter Rule and Viewing Data on the Screen
 Packet capture filter rule  examples are the same as wireshark, so read https://gitlab.com/wireshark/wireshark/-/wikis/CaptureFilters or https://www.wireshark.org/docs/wsug_html_chunked/ChCapCaptureFilterSection.html . If you want to view the data on the screen instead of saving it to a file, just use the filename CON. This is a special filename in Windows allowing you to pipe data to the screen for further processing or viewing in real time.
 
