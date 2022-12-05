@@ -37,6 +37,8 @@ j. tcptop.exe - Shows statistics in terms of BPS (bits per second) and PPS (pack
 
 k. basic_dump_with_filter.exe - Enhancement of basic_dump.exe to show the data in the packet after you specify a filter, eg basic_dump_with_filter -f "port 80"
 
+Note that stdout redirection will work with tcptop and basic_dump_with_filter commands, ie command | grep .* will show the data on the wire.
+
 # Packet Capture Filter Rule and Viewing Data on the Screen
 Packet capture filter rule  examples are the same as wireshark, so read https://www.wireshark.org/docs/man-pages/pcap-filter.html OR https://www.tcpdump.org/manpages/pcap-filter.7.html . If you want to view the data on the screen instead of saving it to a file, just use the filename CON. This is a special filename in Windows allowing you to pipe data to the screen for further processing or viewing in real time.
 
