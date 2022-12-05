@@ -38,7 +38,7 @@ j. tcptop.exe - Shows statistics in terms of BPS (bits per second) and PPS (pack
 k. basic_dump_with_filter.exe - Enhancement of basic_dump.exe to show the data in the packet after you specify a filter, eg basic_dump_with_filter -f "port 80"
 
 # Packet Capture Filter Rule and Viewing Data on the Screen
-Packet capture filter rule  examples are the same as wireshark, so read https://gitlab.com/wireshark/wireshark/-/wikis/CaptureFilters or https://www.wireshark.org/docs/wsug_html_chunked/ChCapCaptureFilterSection.html . If you want to view the data on the screen instead of saving it to a file, just use the filename CON. This is a special filename in Windows allowing you to pipe data to the screen for further processing or viewing in real time.
+Packet capture filter rule  examples are the same as wireshark, so read https://www.wireshark.org/docs/man-pages/pcap-filter.html OR https://www.tcpdump.org/manpages/pcap-filter.7.html . If you want to view the data on the screen instead of saving it to a file, just use the filename CON. This is a special filename in Windows allowing you to pipe data to the screen for further processing or viewing in real time.
 
 # Compiling the Files
 The files are basically in C or C++. I've modified the GNUmakefiles to compile under MINGW-64 in Windows. Although there is a cross-compiler in Linux that produces Windows executables, I've had some problems with the linker linking to invalid files. So I've used the Windows version. I've gotten the windows compiler from https://github.com/skeeto/w64devkit/releases/tag/v1.16.1 from a gentleman Christopher Wellons whose website is here: https://nullprogram.com/tools/ . The website has some interesting articles and other tools which you may be interested to compile and use.
